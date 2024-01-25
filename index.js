@@ -1,4 +1,11 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#supreme'),
+    smooth: true
+});
+
+
 // ---------------------------------------moving the green cursor and blurred cursor--------------------------------------
+
 function movingPointer(){
     window.addEventListener("mousemove", function(event){
         console.log(event);
