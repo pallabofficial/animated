@@ -10,10 +10,10 @@ html,body{
     height:100%;
     width: 100%;
 }
+/* -------------------------------------------navbar section-------------------------------- */
 #nav{
     width:100%;
     height:15vh;
-    /* background-color: brown; */
     display:flex;
     gap:50px;
     align-items: center;
@@ -29,6 +29,33 @@ html,body{
     text-transform: uppercase;
     font-weight:500;
 }
+
+/* ---------------------------------------------cursor section--------------------------------- */
+
+#cursor{
+    height:3vh;
+    /* width: 7vw; */
+    aspect-ratio: 1/1;
+    background-color: #bafd02;
+    border-radius: 50%;
+    position: fixed;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+
+    /* z-index: 99; */
+}
+#cursor-blur{
+    height:50vh;
+
+    aspect-ratio: 1/1;
+    background-color:#7aa20c4e;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(60px);
+    z-index: 9;
+
+}
+
+/* -----------------------------------------background video section------------------------------------------------- */
 video{
     width:100%;
     height:100%;
@@ -50,12 +77,14 @@ video{
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* background-color: red; */
+    z-index: 10;
+    
 }
 #page1 h1{
     font-size: 15vh;
     position: relative;
     font-weight: bolder;
+    z-index: 10;
     
 }
 #page1 h1::before{
@@ -87,4 +116,5 @@ video{
 #page2{
     height:100vh;
     width:100%;
+    z-index: 10;
 }
